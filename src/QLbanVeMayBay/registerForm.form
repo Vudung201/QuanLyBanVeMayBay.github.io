@@ -28,11 +28,6 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="335" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
           <Group type="102" alignment="1" attributes="0">
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
@@ -46,15 +41,15 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="namRadioButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                              <Component id="nuRadioButton" min="-2" max="-2" attributes="0"/>
-                          </Group>
                           <Component id="qtText" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
                           <Component id="jScrollPane1" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
                           <Component id="dateText" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
                           <Component id="emailText" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="namRadioButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                              <Component id="nuRadioButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
@@ -62,16 +57,13 @@
                       <Component id="passText" min="-2" pref="197" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="153" max="32767" attributes="0"/>
+                      <EmptySpace min="211" pref="432" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="nameText" min="-2" pref="197" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="signInButton" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -85,16 +77,31 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="signInButton" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="290" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="emailText" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -121,7 +128,7 @@
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                       <Component id="sdtText" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -135,17 +142,21 @@
                       <Component id="jLabel9" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jScrollPane1" min="-2" pref="109" max="-2" attributes="0"/>
+                      <EmptySpace pref="30" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          <Component id="signInButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="70" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="signInButton" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -154,7 +165,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="36" style="1"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="33" red="ff" type="rgb"/>
@@ -163,6 +174,11 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="qtText">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="qtTextActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="qtTextKeyPressed"/>
@@ -171,21 +187,26 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="M&#x1ead;t kh&#x1ea9;u"/>
+        <Property name="text" type="java.lang.String" value="M&#x1ead;t kh&#x1ea9;u:"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="H&#x1ecd; t&#xea;n"/>
+        <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="nameText">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="nameTextKeyPressed"/>
       </Events>
@@ -193,22 +214,35 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Email"/>
+        <Property name="text" type="java.lang.String" value="T&#xe0;i kho&#x1ea3;n:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="emailText">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="emailTextKeyPressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i"/>
+        <Property name="text" type="java.lang.String" value="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="sdtText">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="sdtTextKeyPressed"/>
       </Events>
@@ -216,9 +250,9 @@
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="&#x110;&#x1ecb;a ch&#x1ec9;"/>
+        <Property name="text" type="java.lang.String" value="&#x110;&#x1ecb;a ch&#x1ec9;:"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -231,6 +265,9 @@
         <Component class="javax.swing.JTextArea" name="diachiTextArea">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
           </Properties>
         </Component>
@@ -238,6 +275,12 @@
     </Container>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/QLbanVeMayBay/Go Back_50px.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Quay l&#x1ea1;i"/>
       </Properties>
       <Events>
@@ -246,6 +289,12 @@
     </Component>
     <Component class="javax.swing.JButton" name="signInButton">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/QLbanVeMayBay/Ok_50px.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng k&#xfd;"/>
       </Properties>
       <Events>
@@ -260,21 +309,26 @@
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh"/>
+        <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="S&#x1ed1; CMND"/>
+        <Property name="text" type="java.lang.String" value="S&#x1ed1; CMND:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="soCMText">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="soCMTextKeyPressed"/>
       </Events>
@@ -283,6 +337,9 @@
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup1"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
         <Property name="selected" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Nam"/>
@@ -293,28 +350,43 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup1"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh"/>
+        <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch"/>
+        <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="passText">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/QLbanVeMayBay/icons8-user-50.png"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

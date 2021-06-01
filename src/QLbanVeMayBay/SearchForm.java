@@ -67,16 +67,19 @@ public class SearchForm extends javax.swing.JFrame {
         numeric2 = new javax.swing.JSpinner();
         jLabel8 = new javax.swing.JLabel();
         hangveComboBox = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tìm kiếm chuyến bay");
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("Tìm kiếm chuyến bay");
 
+        backjButton1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        backjButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Go Back_50px.png"))); // NOI18N
         backjButton1.setText("Quay lại");
         backjButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,6 +87,8 @@ public class SearchForm extends javax.swing.JFrame {
             }
         });
 
+        submitButton2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        submitButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Ok_50px.png"))); // NOI18N
         submitButton2.setText("Xác nhận");
         submitButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +97,7 @@ public class SearchForm extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(oneRadioButton);
-        oneRadioButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        oneRadioButton.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         oneRadioButton.setText("Vé một chiều");
         oneRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +106,7 @@ public class SearchForm extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(twoRadioButton);
-        twoRadioButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        twoRadioButton.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         twoRadioButton.setText("Vé khứ hồi");
         twoRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,40 +114,47 @@ public class SearchForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Điểm khởi hành :");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Điểm đến :");
 
+        diComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         diComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hà Nội", "Đà Nẵng", "Hồ Chí Minh" }));
 
+        denComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         denComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hà Nội", "Đà Nẵng", "Hồ Chí Mịnh", " " }));
 
         dateDi.setDateFormatString("dd-MM-yyyy");
 
         dateVe.setDateFormatString("dd-MM-yyyy");
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Ngày đi :");
 
-        date2jLabel.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        date2jLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         date2jLabel.setText("Ngày về :");
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setText("Số người lớn :");
 
+        numeric1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         numeric1.setModel(new javax.swing.SpinnerNumberModel(1, 1, 10, 1));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setText("Số trẻ em :");
 
+        numeric2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         numeric2.setModel(new javax.swing.SpinnerNumberModel(0, 0, 9, 1));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setText("Hạng vé :");
 
+        hangveComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         hangveComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hạng Phổ Thông", "Hạng Phổ Thông Đặc Biệt", "Hạng Thương Gia" }));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Search_50px.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -164,12 +176,10 @@ public class SearchForm extends javax.swing.JFrame {
                             .addComponent(dateVe, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(date2jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(twoRadioButton)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(numeric2)
-                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(submitButton2))
+                                    .addComponent(numeric2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(date2jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(64, 64, 64))
                     .addGroup(layout.createSequentialGroup()
@@ -183,20 +193,28 @@ public class SearchForm extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(backjButton1)
                             .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(11, 11, 11)
-                                .addComponent(jLabel1))
                             .addComponent(hangveComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(298, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(backjButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(submitButton2))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(jLabel1)
-                .addGap(28, 28, 28)
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel5))
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(oneRadioButton)
                     .addComponent(twoRadioButton))
@@ -230,11 +248,10 @@ public class SearchForm extends javax.swing.JFrame {
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(hangveComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
+                .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(backjButton1)
-                    .addComponent(submitButton2))
-                .addGap(48, 48, 48))
+                    .addComponent(submitButton2)))
         );
 
         pack();
@@ -373,6 +390,7 @@ public class SearchForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

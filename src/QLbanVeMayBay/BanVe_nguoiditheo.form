@@ -46,17 +46,15 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="backButton" min="-2" pref="159" max="-2" attributes="0"/>
+              <EmptySpace pref="348" max="32767" attributes="0"/>
+              <Component id="submitButton" min="-2" max="-2" attributes="0"/>
+          </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="backButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="submitButton" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="Tabbed" alignment="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <Component id="Tabbed" min="-2" pref="604" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -64,13 +62,12 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-              <Component id="Tabbed" min="-2" pref="411" max="-2" attributes="0"/>
-              <EmptySpace pref="49" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="submitButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="backButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Component id="Tabbed" min="-2" pref="364" max="-2" attributes="0"/>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="backButton" max="32767" attributes="0"/>
+                  <Component id="submitButton" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -78,6 +75,12 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="submitButton">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/QLbanVeMayBay/Ok_50px.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="X&#xe1;c nh&#x1ead;n"/>
       </Properties>
       <Events>
@@ -86,6 +89,12 @@
     </Component>
     <Component class="javax.swing.JButton" name="backButton">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/QLbanVeMayBay/Go Back_50px.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Quay l&#x1ea1;i"/>
       </Properties>
       <Events>
@@ -111,58 +120,67 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="qtComboBox1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="dateText1" alignment="0" pref="239" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="namRadioButton1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="nuRadioButton1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="nameText1" max="32767" attributes="0"/>
+                                  <Component id="dateText1" pref="220" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="158" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="45" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel51" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel8" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="dateText1" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="dateText1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -175,7 +193,7 @@
                           <Component id="qtComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="60" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -184,7 +202,10 @@
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -192,7 +213,7 @@
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -200,7 +221,7 @@
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -216,7 +237,7 @@
             <Component class="javax.swing.JTextField" name="nameText1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -226,7 +247,7 @@
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -237,7 +258,7 @@
                   <ComponentRef name="buttonGroup1"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -252,7 +273,7 @@
                   <ComponentRef name="buttonGroup1"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -263,7 +284,7 @@
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -271,7 +292,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -289,6 +310,13 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel51">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -307,52 +335,57 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="qtComboBox2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="nameText2" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="namRadioButton2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="nuRadioButton2" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="dateText2" alignment="0" pref="239" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="dateText2" alignment="0" pref="188" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="158" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="dateText2" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -368,7 +401,7 @@
                           <Component id="qtComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="74" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -377,7 +410,10 @@
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -385,7 +421,7 @@
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -393,7 +429,7 @@
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -409,7 +445,7 @@
             <Component class="javax.swing.JTextField" name="nameText2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -419,7 +455,7 @@
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -430,7 +466,7 @@
                   <ComponentRef name="buttonGroup2"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -445,7 +481,7 @@
                   <ComponentRef name="buttonGroup2"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -456,7 +492,7 @@
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -464,7 +500,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -482,6 +518,13 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel52">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -500,55 +543,61 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="qtComboBox3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="nameText3" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="namRadioButton3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="nuRadioButton3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="dateText3" alignment="0" pref="239" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="dateText3" alignment="0" pref="185" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="162" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="dateText3" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                          <Component id="dateText3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -561,7 +610,7 @@
                           <Component id="qtComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="63" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -570,7 +619,10 @@
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -578,7 +630,7 @@
             <Component class="javax.swing.JLabel" name="jLabel17">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -586,7 +638,7 @@
             <Component class="javax.swing.JLabel" name="jLabel18">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -602,7 +654,7 @@
             <Component class="javax.swing.JTextField" name="nameText3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -612,7 +664,7 @@
             <Component class="javax.swing.JLabel" name="jLabel19">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -623,7 +675,7 @@
                   <ComponentRef name="buttonGroup3"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -638,7 +690,7 @@
                   <ComponentRef name="buttonGroup3"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -649,7 +701,7 @@
             <Component class="javax.swing.JLabel" name="jLabel20">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -657,7 +709,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -676,6 +728,13 @@
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabel53">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel4">
@@ -692,48 +751,58 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText4" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="namRadioButton4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="nuRadioButton4" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton4" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton4" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="dateText4" alignment="0" pref="239" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="dateText4" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="nameText4" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="qtComboBox4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="jLabel54" min="-2" pref="48" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="160" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -754,7 +823,7 @@
                           <Component id="qtComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="79" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -763,7 +832,10 @@
             <Component class="javax.swing.JLabel" name="jLabel21">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -771,7 +843,7 @@
             <Component class="javax.swing.JLabel" name="jLabel22">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -779,7 +851,7 @@
             <Component class="javax.swing.JLabel" name="jLabel23">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -795,7 +867,7 @@
             <Component class="javax.swing.JTextField" name="nameText4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -805,7 +877,7 @@
             <Component class="javax.swing.JLabel" name="jLabel24">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -816,7 +888,7 @@
                   <ComponentRef name="buttonGroup4"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -831,7 +903,7 @@
                   <ComponentRef name="buttonGroup4"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -842,7 +914,7 @@
             <Component class="javax.swing.JLabel" name="jLabel25">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -850,7 +922,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -869,6 +941,13 @@
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabel54">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel5">
@@ -883,50 +962,60 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText5" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel28" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel29" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel28" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel29" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="dateText5" alignment="0" pref="239" max="32767" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="namRadioButton5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="nuRadioButton5" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="dateText5" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="qtComboBox5" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="nameText5" min="-2" pref="232" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="157" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText5" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -947,7 +1036,7 @@
                           <Component id="qtComboBox5" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="75" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -956,7 +1045,10 @@
             <Component class="javax.swing.JLabel" name="jLabel26">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -964,7 +1056,7 @@
             <Component class="javax.swing.JLabel" name="jLabel27">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -972,7 +1064,7 @@
             <Component class="javax.swing.JLabel" name="jLabel28">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -988,7 +1080,7 @@
             <Component class="javax.swing.JTextField" name="nameText5">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -998,7 +1090,7 @@
             <Component class="javax.swing.JLabel" name="jLabel29">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -1009,7 +1101,7 @@
                   <ComponentRef name="buttonGroup5"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -1024,7 +1116,7 @@
                   <ComponentRef name="buttonGroup5"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -1035,7 +1127,7 @@
             <Component class="javax.swing.JLabel" name="jLabel30">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -1043,7 +1135,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox5">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -1062,6 +1154,13 @@
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabel55">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel6">
@@ -1076,21 +1175,10 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText6" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel33" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1102,24 +1190,42 @@
                                           <Component id="namRadioButton6" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="nuRadioButton6" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="dateText6" alignment="0" pref="239" max="32767" attributes="0"/>
+                                      <Component id="dateText6" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="qtComboBox6" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="nameText6" min="-2" pref="222" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="165" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText6" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1140,7 +1246,7 @@
                           <Component id="qtComboBox6" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="99" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1149,7 +1255,10 @@
             <Component class="javax.swing.JLabel" name="jLabel31">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -1255,6 +1364,13 @@
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabel56">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel7">
@@ -1269,21 +1385,10 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText7" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel38" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1295,23 +1400,44 @@
                                           <Component id="namRadioButton7" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="nuRadioButton7" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="dateText7" alignment="0" pref="239" max="32767" attributes="0"/>
+                                      <Component id="dateText7" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="qtComboBox7" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="nameText7" min="-2" pref="203" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="jLabel36" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel57" min="-2" pref="48" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="169" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1333,7 +1459,7 @@
                           <Component id="qtComboBox7" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel40" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="76" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1342,7 +1468,10 @@
             <Component class="javax.swing.JLabel" name="jLabel36">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -1350,7 +1479,7 @@
             <Component class="javax.swing.JLabel" name="jLabel37">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -1358,7 +1487,7 @@
             <Component class="javax.swing.JLabel" name="jLabel38">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -1374,7 +1503,7 @@
             <Component class="javax.swing.JTextField" name="nameText7">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -1384,7 +1513,7 @@
             <Component class="javax.swing.JLabel" name="jLabel39">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -1395,7 +1524,7 @@
                   <ComponentRef name="buttonGroup7"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -1410,7 +1539,7 @@
                   <ComponentRef name="buttonGroup7"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -1421,7 +1550,7 @@
             <Component class="javax.swing.JLabel" name="jLabel40">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -1429,7 +1558,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox7">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -1448,6 +1577,13 @@
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabel57">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel8">
@@ -1462,50 +1598,60 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText8" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox8" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="qtComboBox8" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton8" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton8" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel42" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="dateText8" alignment="0" pref="239" max="32767" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="namRadioButton8" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="nuRadioButton8" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="nameText8" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="dateText8" alignment="0" pref="210" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jLabel41" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                              <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="166" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText8" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1526,7 +1672,7 @@
                           <Component id="qtComboBox8" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel45" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="75" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1535,7 +1681,10 @@
             <Component class="javax.swing.JLabel" name="jLabel41">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -1543,7 +1692,7 @@
             <Component class="javax.swing.JLabel" name="jLabel42">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -1551,7 +1700,7 @@
             <Component class="javax.swing.JLabel" name="jLabel43">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -1567,7 +1716,7 @@
             <Component class="javax.swing.JTextField" name="nameText8">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -1577,7 +1726,7 @@
             <Component class="javax.swing.JLabel" name="jLabel44">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -1588,7 +1737,7 @@
                   <ComponentRef name="buttonGroup8"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -1603,7 +1752,7 @@
                   <ComponentRef name="buttonGroup8"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -1614,7 +1763,7 @@
             <Component class="javax.swing.JLabel" name="jLabel45">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -1622,7 +1771,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox8">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -1640,6 +1789,13 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel58">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -1655,55 +1811,65 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText9" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox9" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel48" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel49" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="qtComboBox9" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton9" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton9" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel48" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel49" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel47" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="dateText9" alignment="0" pref="239" max="32767" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="nameText9" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="namRadioButton9" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="nuRadioButton9" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="dateText9" pref="206" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jLabel46" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="167" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="nameText9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nameText9" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel48" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="dateText9" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -1719,7 +1885,7 @@
                           <Component id="qtComboBox9" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="89" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1728,7 +1894,10 @@
             <Component class="javax.swing.JLabel" name="jLabel46">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -1736,7 +1905,7 @@
             <Component class="javax.swing.JLabel" name="jLabel47">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -1744,7 +1913,7 @@
             <Component class="javax.swing.JLabel" name="jLabel48">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -1760,7 +1929,7 @@
             <Component class="javax.swing.JTextField" name="nameText9">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -1770,7 +1939,7 @@
             <Component class="javax.swing.JLabel" name="jLabel49">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -1781,7 +1950,7 @@
                   <ComponentRef name="buttonGroup9"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -1796,7 +1965,7 @@
                   <ComponentRef name="buttonGroup9"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -1807,7 +1976,7 @@
             <Component class="javax.swing.JLabel" name="jLabel50">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -1815,7 +1984,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox9">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -1833,6 +2002,13 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel59">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -1849,49 +2025,60 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="nameText10" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="qtComboBox10" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="qtComboBox10" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="namRadioButton10" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="nuRadioButton10" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="dateText110" alignment="0" pref="239" max="32767" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="nameText10" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="namRadioButton10" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="nuRadioButton10" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="dateText110" pref="200" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                              <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="171" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="nameText10" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1912,7 +2099,7 @@
                           <Component id="qtComboBox10" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="78" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1921,7 +2108,7 @@
             <Component class="javax.swing.JTextField" name="nameText10">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -1934,7 +2121,7 @@
                   <ComponentRef name="buttonGroup10"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Nam"/>
@@ -1949,7 +2136,7 @@
                   <ComponentRef name="buttonGroup10"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="N&#x1eef;"/>
               </Properties>
@@ -1960,7 +2147,7 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n:"/>
               </Properties>
@@ -1968,7 +2155,10 @@
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="16" style="3"/>
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin ng&#x1b0;&#x1edd;i &#x111;i c&#xf9;ng"/>
               </Properties>
@@ -1976,7 +2166,7 @@
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh:"/>
               </Properties>
@@ -1984,7 +2174,7 @@
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh:"/>
               </Properties>
@@ -1992,7 +2182,7 @@
             <Component class="javax.swing.JComboBox" name="qtComboBox10">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="6">
@@ -2013,7 +2203,7 @@
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="15" style="0"/>
+                  <Font name="Tahoma" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qu&#x1ed1;c t&#x1ecb;ch:"/>
               </Properties>
@@ -2025,6 +2215,13 @@
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel60">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/QLbanVeMayBay/icons8-member-50.png"/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>

@@ -47,23 +47,55 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        logoutButton = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
         searchButton = new javax.swing.JButton();
         accButton = new javax.swing.JButton();
         ticketButton = new javax.swing.JButton();
-        exitButton = new javax.swing.JButton();
-        logoutButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("MainMenu");
+        setTitle("Giao diện khách hàng");
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jPanel2.setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 51, 0));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/travelling.png"))); // NOI18N
-        jLabel1.setText("Menu Chính");
+        jLabel1.setText("TRANG CHỦ");
+        jPanel2.add(jLabel1);
+        jLabel1.setBounds(190, 30, 218, 44);
+
+        logoutButton.setBackground(new java.awt.Color(204, 204, 204));
+        logoutButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        logoutButton.setForeground(new java.awt.Color(255, 51, 51));
+        logoutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Go Back_50px.png"))); // NOI18N
+        logoutButton.setText("Đăng  xuất");
+        logoutButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(logoutButton);
+        logoutButton.setBounds(360, 350, 190, 59);
+
+        exitButton.setBackground(new java.awt.Color(204, 204, 204));
+        exitButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        exitButton.setForeground(new java.awt.Color(255, 51, 51));
+        exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Cancel_50px.png"))); // NOI18N
+        exitButton.setText("Thoát");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(exitButton);
+        exitButton.setBounds(0, 350, 150, 59);
 
         searchButton.setBackground(new java.awt.Color(201, 255, 255));
-        searchButton.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        searchButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         searchButton.setForeground(new java.awt.Color(0, 0, 255));
         searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/loupe.png"))); // NOI18N
         searchButton.setText("Tìm kiếm chuyến bay");
@@ -72,9 +104,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 searchButtonActionPerformed(evt);
             }
         });
+        jPanel2.add(searchButton);
+        searchButton.setBounds(140, 100, 280, 50);
 
         accButton.setBackground(new java.awt.Color(201, 255, 255));
-        accButton.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        accButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         accButton.setForeground(new java.awt.Color(0, 0, 255));
         accButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/user.png"))); // NOI18N
         accButton.setText("Thông tin tài khoản");
@@ -84,9 +118,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 accButtonActionPerformed(evt);
             }
         });
+        jPanel2.add(accButton);
+        accButton.setBounds(140, 240, 280, 50);
 
         ticketButton.setBackground(new java.awt.Color(201, 255, 255));
-        ticketButton.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        ticketButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         ticketButton.setForeground(new java.awt.Color(0, 0, 255));
         ticketButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/ticket.png"))); // NOI18N
         ticketButton.setText("Xem Vé");
@@ -95,67 +131,29 @@ public class NewJFrame extends javax.swing.JFrame {
                 ticketButtonActionPerformed(evt);
             }
         });
+        jPanel2.add(ticketButton);
+        ticketButton.setBounds(140, 170, 280, 50);
 
-        exitButton.setBackground(new java.awt.Color(204, 204, 204));
-        exitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        exitButton.setForeground(new java.awt.Color(255, 51, 51));
-        exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/shutdown.png"))); // NOI18N
-        exitButton.setText("Thoát");
-        exitButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitButtonActionPerformed(evt);
-            }
-        });
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-user-50.png"))); // NOI18N
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(130, 20, 50, 50);
 
-        logoutButton.setBackground(new java.awt.Color(204, 204, 204));
-        logoutButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        logoutButton.setForeground(new java.awt.Color(255, 51, 51));
-        logoutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/sign-out.png"))); // NOI18N
-        logoutButton.setText("Đăng  xuất");
-        logoutButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logoutButtonActionPerformed(evt);
-            }
-        });
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Maybay.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(0, 0, 550, 410);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(86, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(accButton, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1)
-                            .addComponent(ticketButton, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(189, 189, 189))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(exitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(340, 340, 340)
-                                .addComponent(logoutButton)))
-                        .addGap(56, 56, 56))))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 552, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1)
-                .addGap(48, 48, 48)
-                .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ticketButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(accButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(exitButton)
-                    .addComponent(logoutButton))
-                .addContainerGap(35, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -234,6 +232,9 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton accButton;
     private javax.swing.JButton exitButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JButton logoutButton;
     private javax.swing.JButton searchButton;
     private javax.swing.JButton ticketButton;

@@ -5,6 +5,8 @@
  */
 package QLbanVeMayBay;
 
+import static QLbanVeMayBay.dsVe.dsVeTable;
+import Service.veService;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -27,7 +29,6 @@ import ketnoiSQL.ketnoiSQL;
 public class tracuuchuyenbay extends javax.swing.JFrame {
 
     /**
-     * Creates new form tracuuchuyenbay
      */
     
     //tạo bảng tra cuu
@@ -37,6 +38,8 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
     //tạo bảng nguoi di cung
     private String header[] = {"ID", "accID", "veID","Họ tên","Ngày sinh","Giới tính","Quốc tịch"};
     private DefaultTableModel tblnguoidicung = new DefaultTableModel(header, 0);
+    
+     veService veService;
     
     public tracuuchuyenbay() {
         initComponents();
@@ -57,31 +60,32 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        searchButton = new javax.swing.JButton();
+        inTTButton = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
+        idCBText = new javax.swing.JTextField();
+        ttNDCButton = new javax.swing.JButton();
+        huyButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        backButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tra cứu chuyến bay");
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Tra cứu chuyến bay");
+        jLabel1.setText("TRA CỨU CHUYẾN BAY");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(488, 488, 488)
+                .addGap(474, 474, 474)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -95,33 +99,23 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jButton1.setBackground(new java.awt.Color(51, 153, 255));
-        jButton1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Tìm kiếm");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        searchButton.setBackground(new java.awt.Color(51, 153, 255));
+        searchButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        searchButton.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton.setText("Tìm kiếm");
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                searchButtonActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 204, 0));
-        jButton2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("In thông tin tra cứu");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        inTTButton.setBackground(new java.awt.Color(0, 204, 0));
+        inTTButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        inTTButton.setForeground(new java.awt.Color(255, 255, 255));
+        inTTButton.setText("In thông tin tra cứu");
+        inTTButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setBackground(new java.awt.Color(255, 0, 51));
-        jButton3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Thoát");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                inTTButtonActionPerformed(evt);
             }
         });
 
@@ -130,34 +124,40 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(262, 262, 262)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(190, 190, 190)
-                .addComponent(jButton3)
-                .addGap(102, 102, 102))
+                .addGap(39, 39, 39)
+                .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53)
+                .addComponent(inTTButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(inTTButton, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                    .addComponent(searchButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
-        jLabel2.setFont(new java.awt.Font("Roboto", 1, 15)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel2.setText("Mã chuyến bay");
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        idCBText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jButton4.setText("Xem thông tin người đi cùng");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        ttNDCButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        ttNDCButton.setText("Xem thông tin người đi cùng");
+        ttNDCButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                ttNDCButtonActionPerformed(evt);
+            }
+        });
+
+        huyButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        huyButton.setText("Hủy vé");
+        huyButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                huyButtonActionPerformed(evt);
             }
         });
 
@@ -165,25 +165,29 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(340, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(huyButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(529, 529, 529))
+                    .addComponent(idCBText, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ttNDCButton))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(idCBText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
-                .addComponent(jButton4)
-                .addGap(60, 60, 60))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(huyButton, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(ttNDCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         jTable1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -213,7 +217,7 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1250, Short.MAX_VALUE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(26, Short.MAX_VALUE))
@@ -227,8 +231,18 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        backButton.setBackground(new java.awt.Color(255, 0, 51));
+        backButton.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        backButton.setForeground(new java.awt.Color(255, 255, 255));
+        backButton.setText("Thoát");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -236,6 +250,9 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +260,8 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -254,26 +272,26 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void inTTButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inTTButtonActionPerformed
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(this, "Báo cáo đã được in!");
         return;
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_inTTButtonActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
         mainForm main = new mainForm();
         main.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_backButtonActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
         // TODO add your handling code here:
         Connection conn = null;
         Statement st = null;
@@ -283,8 +301,8 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
                         " from Account as a, dsChuyenbay as b, ve as v " +
                         " where a.accID = v.accID and v.idCb = b.idCb ";
 
-            if (!jTextField1.getText().isEmpty()) {
-                sql = sql + " and b.idCB = "+jTextField1.getText();
+            if (!idCBText.getText().isEmpty()) {
+                sql = sql + " and b.idCB = "+idCBText.getText();
             }
             
         try {
@@ -312,7 +330,7 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
                 data.add(rs.getString("noiden"));
                 data.add(rs.getString("timedi"));
                 data.add(rs.getString("timeden"));
-                data.add(rs.getString("veID"));
+                data.add(rs.getInt("veID"));
                 data.add(rs.getString("hoten"));
                 data.add(rs.getString("soCM"));
                 data.add(rs.getString("sdt"));
@@ -340,9 +358,9 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
             }
         }
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_searchButtonActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void ttNDCButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ttNDCButtonActionPerformed
         // TODO add your handling code here:
         Connection conn = null;
         Statement st = null;
@@ -353,7 +371,7 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
         
         if (jTable1.getSelectedRow() == -1) {
             JOptionPane.showMessageDialog(this, "Vui lòng chọn tên hành khách trong bảng để xem người đi cùng!");
-            jTable1.requestFocus();
+            //jTable1.requestFocus();
             return;
         } else {
         }
@@ -426,7 +444,26 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
             }
         }
         
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_ttNDCButtonActionPerformed
+
+    private void huyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_huyButtonActionPerformed
+        // TODO add your handling code here:\
+         int row = jTable1.getSelectedRow();
+        if (row == -1) {
+            JOptionPane.showMessageDialog(this, "Vui long chon", "Loi", JOptionPane.ERROR_MESSAGE);
+        } else {
+            int confirm = JOptionPane.showConfirmDialog(this, "Bạn có muốn Hủy chuyến bay  này ?");
+            if (confirm == JOptionPane.YES_OPTION) {
+                int idVe = (int) jTable1.getValueAt(row, 5);
+                veService = new veService();
+                veService.deleteVe(idVe);
+                tbltracuu.setRowCount(0);
+              
+                
+
+            }
+        }
+    }//GEN-LAST:event_huyButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -464,10 +501,10 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton backButton;
+    private javax.swing.JButton huyButton;
+    private javax.swing.JTextField idCBText;
+    private javax.swing.JButton inTTButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
@@ -477,6 +514,7 @@ public class tracuuchuyenbay extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton searchButton;
+    private javax.swing.JButton ttNDCButton;
     // End of variables declaration//GEN-END:variables
 }

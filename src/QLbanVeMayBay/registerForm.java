@@ -72,14 +72,16 @@ public class registerForm extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         passText = new javax.swing.JPasswordField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Đăng Ký");
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 51, 0));
         jLabel1.setText("Đăng Ký");
 
+        qtText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 qtTextActionPerformed(evt);
@@ -91,38 +93,50 @@ public class registerForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel3.setText("Mật khẩu");
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("Mật khẩu:");
         jLabel3.setToolTipText("");
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel4.setText("Họ tên");
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setText("Họ và tên:");
 
+        nameText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nameText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 nameTextKeyPressed(evt);
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel5.setText("Email");
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setText("Tài khoản:");
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel6.setText("Số điện thoại");
+        emailText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        emailText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                emailTextKeyPressed(evt);
+            }
+        });
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setText("Số điện thoại:");
+
+        sdtText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         sdtText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 sdtTextKeyPressed(evt);
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel7.setText("Địa chỉ");
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setText("Địa chỉ:");
 
         diachiTextArea.setColumns(20);
+        diachiTextArea.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         diachiTextArea.setRows(5);
         jScrollPane1.setViewportView(diachiTextArea);
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Go Back_50px.png"))); // NOI18N
         jButton1.setText("Quay lại");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +144,8 @@ public class registerForm extends javax.swing.JFrame {
             }
         });
 
+        signInButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        signInButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Ok_50px.png"))); // NOI18N
         signInButton.setText("Đăng ký");
         signInButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,13 +155,14 @@ public class registerForm extends javax.swing.JFrame {
 
         dateText.setDateFormatString("dd-MM-yyyy");
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel8.setText("Ngày sinh");
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setText("Ngày sinh:");
         jLabel8.setToolTipText("");
 
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel9.setText("Số CMND");
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setText("Số CMND:");
 
+        soCMText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         soCMText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 soCMTextKeyPressed(evt);
@@ -153,28 +170,30 @@ public class registerForm extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(namRadioButton);
+        namRadioButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         namRadioButton.setSelected(true);
         namRadioButton.setText("Nam");
 
         buttonGroup1.add(nuRadioButton);
+        nuRadioButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         nuRadioButton.setText("Nữ");
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel10.setText("Giới tính");
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setText("Giới tính:");
         jLabel10.setToolTipText("");
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel11.setText("Quốc tịch");
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel11.setText("Quốc tịch:");
         jLabel11.setToolTipText("");
+
+        passText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-user-50.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(335, 335, 335)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -187,28 +206,25 @@ public class registerForm extends javax.swing.JFrame {
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(namRadioButton)
-                                .addGap(53, 53, 53)
-                                .addComponent(nuRadioButton))
                             .addComponent(qtText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(dateText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(emailText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(emailText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(namRadioButton)
+                                .addGap(53, 53, 53)
+                                .addComponent(nuRadioButton)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
                         .addComponent(passText, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(211, 211, 211)
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
+                        .addGap(211, 432, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
                                 .addComponent(nameText, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(signInButton)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addGap(18, 18, 18)
@@ -217,14 +233,26 @@ public class registerForm extends javax.swing.JFrame {
                                 .addComponent(jLabel9)
                                 .addGap(18, 18, 18)
                                 .addComponent(soCMText, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(89, 89, 89))
+                .addGap(80, 80, 80))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(signInButton))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(290, 290, 290)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jLabel1)
-                .addGap(37, 37, 37)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(emailText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -246,7 +274,7 @@ public class registerForm extends javax.swing.JFrame {
                         .addComponent(jLabel10))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(sdtText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel6)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -257,13 +285,15 @@ public class registerForm extends javax.swing.JFrame {
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(signInButton))
-                .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton1)
+                            .addComponent(signInButton)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         pack();
@@ -389,6 +419,10 @@ public class registerForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_qtTextKeyPressed
 
+    private void emailTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailTextKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailTextKeyPressed
+
     /**
      * @param args the command line arguments
      */
@@ -434,6 +468,7 @@ public class registerForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

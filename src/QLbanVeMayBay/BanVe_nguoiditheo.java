@@ -81,6 +81,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton1 = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
         qtComboBox1 = new javax.swing.JComboBox<>();
+        jLabel51 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -92,6 +93,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton2 = new javax.swing.JRadioButton();
         jLabel15 = new javax.swing.JLabel();
         qtComboBox2 = new javax.swing.JComboBox<>();
+        jLabel52 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -103,6 +105,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton3 = new javax.swing.JRadioButton();
         jLabel20 = new javax.swing.JLabel();
         qtComboBox3 = new javax.swing.JComboBox<>();
+        jLabel53 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
@@ -114,6 +117,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton4 = new javax.swing.JRadioButton();
         jLabel25 = new javax.swing.JLabel();
         qtComboBox4 = new javax.swing.JComboBox<>();
+        jLabel54 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
@@ -125,6 +129,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton5 = new javax.swing.JRadioButton();
         jLabel30 = new javax.swing.JLabel();
         qtComboBox5 = new javax.swing.JComboBox<>();
+        jLabel55 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
@@ -136,6 +141,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton6 = new javax.swing.JRadioButton();
         jLabel35 = new javax.swing.JLabel();
         qtComboBox6 = new javax.swing.JComboBox<>();
+        jLabel56 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
@@ -147,6 +153,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton7 = new javax.swing.JRadioButton();
         jLabel40 = new javax.swing.JLabel();
         qtComboBox7 = new javax.swing.JComboBox<>();
+        jLabel57 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
@@ -158,6 +165,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton8 = new javax.swing.JRadioButton();
         jLabel45 = new javax.swing.JLabel();
         qtComboBox8 = new javax.swing.JComboBox<>();
+        jLabel58 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
@@ -169,6 +177,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         nuRadioButton9 = new javax.swing.JRadioButton();
         jLabel50 = new javax.swing.JLabel();
         qtComboBox9 = new javax.swing.JComboBox<>();
+        jLabel59 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         nameText10 = new javax.swing.JTextField();
         namRadioButton10 = new javax.swing.JRadioButton();
@@ -180,10 +189,13 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         qtComboBox10 = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         dateText110 = new com.toedter.calendar.JDateChooser();
+        jLabel60 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Danh sách người đi theo");
 
+        submitButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        submitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Ok_50px.png"))); // NOI18N
         submitButton.setText("Xác nhận");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,6 +203,8 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
             }
         });
 
+        backButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        backButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/Go Back_50px.png"))); // NOI18N
         backButton.setText("Quay lại");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,82 +212,90 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 0, 0));
         jLabel6.setText("Thông tin người đi cùng");
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setText("Họ và tên:");
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setText("Ngày sinh:");
 
         dateText1.setDateFormatString("dd-MM-yyyy");
 
-        nameText1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel9.setText("Giới tính:");
 
         buttonGroup1.add(namRadioButton1);
-        namRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton1.setSelected(true);
         namRadioButton1.setText("Nam");
 
         buttonGroup1.add(nuRadioButton1);
-        nuRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton1.setText("Nữ");
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel10.setText("Quốc tịch:");
 
-        qtComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel7)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText1))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel10)
-                            .addGap(18, 18, 18)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10))
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(qtComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(namRadioButton1)
+                                .addGap(18, 18, 18)
+                                .addComponent(nuRadioButton1))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel51)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel6))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(18, 18, 18))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel8)
-                                .addComponent(jLabel9))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton1)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton1)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText1, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel6))
-                .addGap(77, 77, 77))
+                                .addGap(15, 15, 15)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(nameText1)
+                            .addComponent(dateText1, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE))))
+                .addGap(0, 158, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel6)
+                .addContainerGap(45, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel51, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(nameText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel8)
-                    .addComponent(dateText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(dateText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
@@ -283,41 +305,44 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 1", jPanel1);
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 0, 0));
         jLabel11.setText("Thông tin người đi cùng");
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel12.setText("Họ và tên:");
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setText("Ngày sinh:");
 
         dateText2.setDateFormatString("dd-MM-yyyy");
 
-        nameText2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel14.setText("Giới tính:");
 
         buttonGroup2.add(namRadioButton2);
-        namRadioButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton2.setSelected(true);
         namRadioButton2.setText("Nam");
 
         buttonGroup2.add(nuRadioButton2);
-        nuRadioButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton2.setText("Nữ");
 
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel15.setText("Quốc tịch:");
 
-        qtComboBox2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -326,37 +351,40 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jLabel12)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText2))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jLabel15)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel13)
-                                .addComponent(jLabel14))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton2)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton2)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText2, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel11))
-                .addGap(77, 77, 77))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addGap(18, 18, 18)
+                        .addComponent(qtComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel52)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel11))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel12))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(nameText2)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(namRadioButton2)
+                                .addGap(18, 18, 18)
+                                .addComponent(nuRadioButton2))
+                            .addComponent(dateText2, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE))))
+                .addGap(0, 158, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel11)
-                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(jLabel52))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel11)
+                        .addGap(8, 8, 8)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(nameText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -373,41 +401,44 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 2", jPanel2);
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 0, 0));
         jLabel16.setText("Thông tin người đi cùng");
 
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel17.setText("Họ và tên:");
 
-        jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel18.setText("Ngày sinh:");
 
         dateText3.setDateFormatString("dd-MM-yyyy");
 
-        nameText3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel19.setText("Giới tính:");
 
         buttonGroup3.add(namRadioButton3);
-        namRadioButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton3.setSelected(true);
         namRadioButton3.setText("Nam");
 
         buttonGroup3.add(nuRadioButton3);
-        nuRadioButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton3.setText("Nữ");
 
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel20.setText("Quốc tịch:");
 
-        qtComboBox3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -416,42 +447,46 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel17)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText3))
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel20)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel18)
-                                .addComponent(jLabel19))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton3)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton3)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText3, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel16))
-                .addGap(77, 77, 77))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addGap(18, 18, 18)
+                        .addComponent(qtComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel53)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel16))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel17))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(nameText3)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(namRadioButton3)
+                                .addGap(18, 18, 18)
+                                .addComponent(nuRadioButton3))
+                            .addComponent(dateText3, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE))))
+                .addGap(0, 162, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel16)
-                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel53)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel16)
+                        .addGap(21, 21, 21)))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(nameText3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(21, 21, 21)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel18)
                     .addComponent(dateText3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
@@ -463,41 +498,44 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 3", jPanel3);
 
-        jLabel21.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 0, 0));
         jLabel21.setText("Thông tin người đi cùng");
 
-        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel22.setText("Họ và tên:");
 
-        jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel23.setText("Ngày sinh:");
 
         dateText4.setDateFormatString("dd-MM-yyyy");
 
-        nameText4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel24.setText("Giới tính:");
 
         buttonGroup4.add(namRadioButton4);
-        namRadioButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton4.setSelected(true);
         namRadioButton4.setText("Nam");
 
         buttonGroup4.add(nuRadioButton4);
-        nuRadioButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton4.setText("Nữ");
 
-        jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel25.setText("Quốc tịch:");
 
-        qtComboBox4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -505,38 +543,45 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addGap(95, 95, 95)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addComponent(jLabel22)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText4))
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addComponent(jLabel25)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel23)
-                                .addComponent(jLabel24))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton4)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton4)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText4, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel21))
-                .addGap(77, 77, 77))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel24))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(namRadioButton4)
+                                .addGap(18, 18, 18)
+                                .addComponent(nuRadioButton4))
+                            .addComponent(dateText4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel22)
+                        .addGap(18, 18, 18)
+                        .addComponent(nameText4))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel25)
+                        .addGap(18, 18, 18)
+                        .addComponent(qtComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel21)))
+                .addGap(0, 160, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel21)
-                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel21)
+                        .addGap(26, 26, 26))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel54)
+                        .addGap(18, 18, 18)))
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
                     .addComponent(nameText4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -553,80 +598,89 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 4", jPanel4);
 
-        jLabel26.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 0, 0));
         jLabel26.setText("Thông tin người đi cùng");
 
-        jLabel27.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel27.setText("Họ và tên:");
 
-        jLabel28.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel28.setText("Ngày sinh:");
 
         dateText5.setDateFormatString("dd-MM-yyyy");
 
-        nameText5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel29.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel29.setText("Giới tính:");
 
         buttonGroup5.add(namRadioButton5);
-        namRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton5.setSelected(true);
         namRadioButton5.setText("Nam");
 
         buttonGroup5.add(nuRadioButton5);
-        nuRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton5.setText("Nữ");
 
-        jLabel30.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel30.setText("Quốc tịch:");
 
-        qtComboBox5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+            .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addComponent(jLabel27)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText5))
-                        .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addComponent(jLabel30)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel28)
-                                .addComponent(jLabel29))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel5Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton5)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton5)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText5, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel26))
-                .addGap(77, 77, 77))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel28)
+                                    .addComponent(jLabel29))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addComponent(namRadioButton5)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(nuRadioButton5))
+                                    .addComponent(dateText5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addComponent(jLabel30)
+                                .addGap(18, 18, 18)
+                                .addComponent(qtComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addComponent(jLabel27)
+                                .addGap(18, 18, 18)
+                                .addComponent(nameText5, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jLabel55)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel26)))
+                .addGap(0, 157, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel26)
-                .addGap(18, 18, 18)
+                .addGap(50, 50, 50)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel55)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel26)
+                        .addGap(10, 10, 10)))
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27)
                     .addComponent(nameText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -643,12 +697,13 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel30))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 5", jPanel5);
 
-        jLabel31.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 0, 0));
         jLabel31.setText("Thông tin người đi cùng");
 
         jLabel32.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
@@ -679,23 +734,16 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         qtComboBox6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         qtComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
 
+        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(92, 92, 92)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addComponent(jLabel32)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText6))
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addComponent(jLabel35)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel33)
@@ -705,18 +753,31 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                                 .addGroup(jPanel6Layout.createSequentialGroup()
                                     .addComponent(namRadioButton6)
                                     .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton6)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText6, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel31))
-                .addGap(77, 77, 77))
+                                    .addComponent(nuRadioButton6))
+                                .addComponent(dateText6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addComponent(jLabel35)
+                            .addGap(18, 18, 18)
+                            .addComponent(qtComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addComponent(jLabel32)
+                            .addGap(18, 18, 18)
+                            .addComponent(nameText6, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel56)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel31)))
+                .addGap(0, 165, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel31)
-                .addGap(18, 18, 18)
+                .addGap(26, 26, 26)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel56)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel31)
+                        .addGap(8, 8, 8)))
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32)
                     .addComponent(nameText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -733,59 +794,53 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel35))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 6", jPanel6);
 
-        jLabel36.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel36.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 0, 0));
         jLabel36.setText("Thông tin người đi cùng");
 
-        jLabel37.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel37.setText("Họ và tên:");
 
-        jLabel38.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel38.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel38.setText("Ngày sinh:");
 
         dateText7.setDateFormatString("dd-MM-yyyy");
 
-        nameText7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel39.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel39.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel39.setText("Giới tính:");
 
         buttonGroup7.add(namRadioButton7);
-        namRadioButton7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton7.setSelected(true);
         namRadioButton7.setText("Nam");
 
         buttonGroup7.add(nuRadioButton7);
-        nuRadioButton7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton7.setText("Nữ");
 
-        jLabel40.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel40.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel40.setText("Quốc tịch:");
 
-        qtComboBox7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(90, 90, 90)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel7Layout.createSequentialGroup()
-                            .addComponent(jLabel37)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText7))
-                        .addGroup(jPanel7Layout.createSequentialGroup()
-                            .addComponent(jLabel40)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(jPanel7Layout.createSequentialGroup()
                             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel38)
@@ -795,17 +850,32 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                                 .addGroup(jPanel7Layout.createSequentialGroup()
                                     .addComponent(namRadioButton7)
                                     .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton7)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText7, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel36))
-                .addGap(77, 77, 77))
+                                    .addComponent(nuRadioButton7))
+                                .addComponent(dateText7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel7Layout.createSequentialGroup()
+                            .addComponent(jLabel40)
+                            .addGap(18, 18, 18)
+                            .addComponent(qtComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel7Layout.createSequentialGroup()
+                            .addComponent(jLabel37)
+                            .addGap(18, 18, 18)
+                            .addComponent(nameText7, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel36)))
+                .addGap(0, 169, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel36)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel36))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(jLabel57)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel37)
@@ -823,79 +893,88 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel40))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 7", jPanel7);
 
-        jLabel41.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel41.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(255, 0, 0));
         jLabel41.setText("Thông tin người đi cùng");
 
-        jLabel42.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel42.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel42.setText("Họ và tên:");
 
-        jLabel43.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel43.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel43.setText("Ngày sinh:");
 
         dateText8.setDateFormatString("dd-MM-yyyy");
 
-        nameText8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel44.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel44.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel44.setText("Giới tính:");
 
         buttonGroup8.add(namRadioButton8);
-        namRadioButton8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton8.setSelected(true);
         namRadioButton8.setText("Nam");
 
         buttonGroup8.add(nuRadioButton8);
-        nuRadioButton8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton8.setText("Nữ");
 
-        jLabel45.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel45.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel45.setText("Quốc tịch:");
 
-        qtComboBox8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+            .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addComponent(jLabel42)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText8))
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addComponent(jLabel45)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel43)
-                                .addComponent(jLabel44))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel8Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton8)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton8)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText8, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel41))
-                .addGap(77, 77, 77))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(jLabel45)
+                                .addGap(18, 18, 18)
+                                .addComponent(qtComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel43)
+                                    .addComponent(jLabel44)
+                                    .addComponent(jLabel42))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel8Layout.createSequentialGroup()
+                                        .addComponent(namRadioButton8)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(nuRadioButton8))
+                                    .addComponent(nameText8)
+                                    .addComponent(dateText8, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)))))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addComponent(jLabel58)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel41)))
+                .addGap(0, 166, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel41)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel41))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel58)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel42)
@@ -913,84 +992,93 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel45))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 8", jPanel8);
 
-        jLabel46.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel46.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(255, 0, 0));
         jLabel46.setText("Thông tin người đi cùng");
 
-        jLabel47.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel47.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel47.setText("Họ và tên:");
 
-        jLabel48.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel48.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel48.setText("Ngày sinh:");
 
         dateText9.setDateFormatString("dd-MM-yyyy");
 
-        nameText9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel49.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel49.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel49.setText("Giới tính:");
 
         buttonGroup9.add(namRadioButton9);
-        namRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton9.setSelected(true);
         namRadioButton9.setText("Nam");
 
         buttonGroup9.add(nuRadioButton9);
-        nuRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton9.setText("Nữ");
 
-        jLabel50.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel50.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel50.setText("Quốc tịch:");
 
-        qtComboBox9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea", " " }));
+
+        jLabel59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+            .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel9Layout.createSequentialGroup()
-                            .addComponent(jLabel47)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText9))
-                        .addGroup(jPanel9Layout.createSequentialGroup()
-                            .addComponent(jLabel50)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel9Layout.createSequentialGroup()
-                            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel48)
-                                .addComponent(jLabel49))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel9Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton9)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton9)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText9, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel46))
-                .addGap(77, 77, 77))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addComponent(jLabel50)
+                                .addGap(18, 18, 18)
+                                .addComponent(qtComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel48)
+                                    .addComponent(jLabel49)
+                                    .addComponent(jLabel47))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(nameText9)
+                                    .addGroup(jPanel9Layout.createSequentialGroup()
+                                        .addComponent(namRadioButton9)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(nuRadioButton9))
+                                    .addComponent(dateText9, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)))))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(jLabel59)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel46)))
+                .addGap(0, 167, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel46)
-                .addGap(18, 18, 18)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jLabel46))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel59)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel47)
-                    .addComponent(nameText9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(nameText9, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel48)
                     .addComponent(dateText9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1003,80 +1091,90 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel50))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 9", jPanel9);
 
-        nameText10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nameText10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         buttonGroup10.add(namRadioButton10);
-        namRadioButton10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        namRadioButton10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         namRadioButton10.setSelected(true);
         namRadioButton10.setText("Nam");
 
         buttonGroup10.add(nuRadioButton10);
-        nuRadioButton10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        nuRadioButton10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nuRadioButton10.setText("Nữ");
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Họ và tên:");
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 16)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 0, 0));
         jLabel5.setText("Thông tin người đi cùng");
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Ngày sinh:");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Giới tính:");
 
-        qtComboBox10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        qtComboBox10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         qtComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viet Nam", "United States", "United KingDom", "Japan", "France", "Korea" }));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Quốc tịch:");
 
         dateText110.setDateFormatString("dd-MM-yyyy");
+
+        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLbanVeMayBay/icons8-member-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addGap(18, 18, 18)
-                            .addComponent(nameText10))
-                        .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addComponent(jLabel4)
-                            .addGap(18, 18, 18)
-                            .addComponent(qtComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel3))
-                            .addGap(18, 18, 18)
-                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel10Layout.createSequentialGroup()
-                                    .addComponent(namRadioButton10)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nuRadioButton10)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(dateText110, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))))
-                    .addComponent(jLabel5))
-                .addGap(77, 77, 77))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(18, 18, 18)
+                                .addComponent(qtComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel1))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(nameText10)
+                                    .addGroup(jPanel10Layout.createSequentialGroup()
+                                        .addComponent(namRadioButton10)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(nuRadioButton10))
+                                    .addComponent(dateText110, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)))))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(86, 86, 86)
+                        .addComponent(jLabel60)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5)))
+                .addGap(0, 171, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jLabel5)
-                .addGap(18, 18, 18)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel5)
+                        .addGap(24, 24, 24))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel60)
+                        .addGap(18, 18, 18)))
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(nameText10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1093,7 +1191,7 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
 
         Tabbed.addTab("Người thứ 10", jPanel10);
@@ -1102,26 +1200,24 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 348, Short.MAX_VALUE)
+                .addComponent(submitButton))
             .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(backButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(submitButton))
-                    .addComponent(Tabbed, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addComponent(Tabbed, javax.swing.GroupLayout.PREFERRED_SIZE, 604, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(Tabbed, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(submitButton)
-                    .addComponent(backButton))
-                .addGap(26, 26, 26))
+                .addComponent(Tabbed, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(backButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(submitButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         pack();
@@ -1297,7 +1393,17 @@ public class BanVe_nguoiditheo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

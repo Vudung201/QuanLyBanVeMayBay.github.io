@@ -21,9 +21,6 @@ import ketnoiSQL.ketnoiSQL;
  */
 public class Baocaonam extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Baocaonam
-     */
     //tạo bảng danh thu năm
     private String header_bcn[] = {"STT", "Tháng", "Số Chuyến bay", "Doanh thu"};
     private DefaultTableModel tblBaocaonam = new DefaultTableModel(header_bcn, 0);
@@ -53,20 +50,20 @@ public class Baocaonam extends javax.swing.JFrame {
         jButton_bcn_lapbc = new javax.swing.JButton();
         jButton_bcn_xoa = new javax.swing.JButton();
         jButton_bcn_in = new javax.swing.JButton();
-        jButton_bcn_thoat = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable_baocaonam = new javax.swing.JTable();
         jButton5 = new javax.swing.JButton();
         jLabel_bcn_thongbao = new javax.swing.JLabel();
+        jButton_bcn_thoat = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Báo cáo năm");
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 30)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Báo cáo năm");
+        jLabel2.setText("BÁO CÁO NĂM");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -75,12 +72,12 @@ public class Baocaonam extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(367, 367, 367)
                 .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(359, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
+                .addContainerGap(27, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(33, 33, 33))
         );
@@ -94,9 +91,9 @@ public class Baocaonam extends javax.swing.JFrame {
         jComboBox_bcn_nam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Năm hệ thống" }));
 
         jButton_bcn_lapbc.setBackground(new java.awt.Color(0, 153, 255));
-        jButton_bcn_lapbc.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jButton_bcn_lapbc.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_bcn_lapbc.setForeground(new java.awt.Color(255, 255, 255));
-        jButton_bcn_lapbc.setText("Lập báo cáo");
+        jButton_bcn_lapbc.setText("LẬP BÁO CÁO");
         jButton_bcn_lapbc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_bcn_lapbcActionPerformed(evt);
@@ -104,9 +101,9 @@ public class Baocaonam extends javax.swing.JFrame {
         });
 
         jButton_bcn_xoa.setBackground(new java.awt.Color(255, 153, 0));
-        jButton_bcn_xoa.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jButton_bcn_xoa.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_bcn_xoa.setForeground(new java.awt.Color(255, 255, 255));
-        jButton_bcn_xoa.setText("Xóa báo cáo");
+        jButton_bcn_xoa.setText("XÓA BÁO CÁO");
         jButton_bcn_xoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_bcn_xoaActionPerformed(evt);
@@ -114,22 +111,12 @@ public class Baocaonam extends javax.swing.JFrame {
         });
 
         jButton_bcn_in.setBackground(new java.awt.Color(0, 204, 0));
-        jButton_bcn_in.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jButton_bcn_in.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_bcn_in.setForeground(new java.awt.Color(255, 255, 255));
-        jButton_bcn_in.setText("In báo cáo");
+        jButton_bcn_in.setText("IN BÁO CÁO");
         jButton_bcn_in.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_bcn_inActionPerformed(evt);
-            }
-        });
-
-        jButton_bcn_thoat.setBackground(new java.awt.Color(255, 51, 0));
-        jButton_bcn_thoat.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jButton_bcn_thoat.setForeground(new java.awt.Color(255, 255, 255));
-        jButton_bcn_thoat.setText("Thoát");
-        jButton_bcn_thoat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_bcn_thoatActionPerformed(evt);
             }
         });
 
@@ -138,26 +125,23 @@ public class Baocaonam extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addContainerGap()
                 .addComponent(jButton_bcn_lapbc)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addGap(48, 48, 48)
+                .addComponent(jButton_bcn_in, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
                 .addComponent(jButton_bcn_xoa)
-                .addGap(88, 88, 88)
-                .addComponent(jButton_bcn_in)
-                .addGap(116, 116, 116)
-                .addComponent(jButton_bcn_thoat, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(141, 141, 141))
+                .addContainerGap(431, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(44, Short.MAX_VALUE)
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_bcn_lapbc, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_bcn_xoa, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_bcn_in, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_bcn_thoat, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31))
+                    .addComponent(jButton_bcn_in, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19))
         );
 
         jTable_baocaonam.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -175,6 +159,7 @@ public class Baocaonam extends javax.swing.JFrame {
         jTable_baocaonam.setRowHeight(30);
         jScrollPane1.setViewportView(jTable_baocaonam);
 
+        jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton5.setText("Xem báo cáo tháng");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,24 +167,30 @@ public class Baocaonam extends javax.swing.JFrame {
             }
         });
 
+        jLabel_bcn_thongbao.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(291, 291, 291)
-                .addComponent(jLabel1)
-                .addGap(29, 29, 29)
-                .addComponent(jComboBox_bcn_nam, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton5)
-                .addGap(55, 55, 55))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel_bcn_thongbao, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jComboBox_bcn_nam, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(554, 554, 554)
+                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,12 +199,14 @@ public class Baocaonam extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox_bcn_nam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
-                    .addComponent(jButton5))
+                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_bcn_thongbao, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -222,30 +215,42 @@ public class Baocaonam extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(268, 268, 268)
-                .addComponent(jLabel_bcn_thongbao, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel_bcn_thongbao, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jButton_bcn_thoat.setBackground(new java.awt.Color(255, 51, 0));
+        jButton_bcn_thoat.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton_bcn_thoat.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_bcn_thoat.setText("QUAY LẠI");
+        jButton_bcn_thoat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_bcn_thoatActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton_bcn_thoat, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton_bcn_thoat, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
